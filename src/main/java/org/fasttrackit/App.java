@@ -3,13 +3,17 @@ package org.fasttrackit;
 public class App {
 
     public static void main(String[] args){
-        System.out.println(average(16,7,9));
+        App app =new App();
+        System.out.println(displayAverage(16,7,9));
+        app.displayAverage(5,9,12);
+
 
     }
-        public static double average( double a, double b, double c){
+        public static  double displayAverage( double a, double b, double c){
             System.out.println(a + " " + b + " " + c);
             double sum = a + b + c;
-            return sum/3;
+            double average=sum/3;
+            return average;
         }
 
 }
